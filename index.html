@@ -1,0 +1,108 @@
+<!-- FILEPATH: /Users/samuvelraja/dev/sv/manivoice/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Template</title>
+    <link rel="stylesheet" href="assets/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+            content-visibility: auto;
+        }
+        }
+    </style>
+</head>
+<body class="bg-[#eae8e1]">
+
+    <main class="container mx-auto px-4 py-8" >
+        <section id="hero" class="text-center bg-[#F9F7F6] rounded-[36px]  h-screen" style="background: linear-gradient(180deg,var(--token-c3dd294d-4924-4bd7-80f1-2cfdc6e0e574, #f9f7f6) 0%,rgba(247,244,242,0) 83.55469107627869%);">
+            <!-- <header class="">
+                <nav class="container mx-auto px-4 py-2">
+                    <ul class="flex space-x-4">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">About</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Portfolio</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>  -->
+            <div class="flex h-full justify-center items-center gap-8">
+                <div class="rounded-[36px] overflow-hidden h-fit">
+                    <img src="./images/manimaran.webp" alt="manimaran image" width="500" height="500" class="aspect-square max-w-100% object-cover">
+                </div>
+                <div>
+                    <h1 class="text-4xl text-6xl font-bold mb-4 nunito text-left">Hey There <br> Im Manimaran</h1>
+                    <p class="text-gray-600 mb-8 nunito text-3xl text-left text-black">Versatile Tamil Voice Talent & <br> Event professional</p>
+                    <div>
+                        <a href="#contact" class="rounded-xl py-4 py-2 bg-black text-[16px]">
+                            Contact now
+                        </a>
+                        <a href="#demo" class="rounded-xl py-4 py-2 bg-black text-[16px]">
+                            View Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="experience" class="mt-12">
+            <div class="flex justify-center gap-8">
+                <div>
+                    <p class="text-2xl font-normal">Years of experience</p>
+                    <p class="text-4xl font-bold">10+</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-normal">Projects completed</p>
+                    <p class="text-4xl font-bold">199+</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-normal">Industries served</p>
+                    <p class="text-4xl font-bold">7+</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="service" class="mt-12">
+            <h2 class="text-6xl">Services</h2>
+            <h3 class="text-3xl">Voice & Audio Services (in Tamil)</h3>
+            <div class="flex flex-wrap">
+                <div class="flex flex-col gap-2">
+                    <div class="border rounded-xl w-10 h-10">
+
+                    </div>
+                    <h4 class="text-2xl font-semibold">Tamil Voice-over</h4>
+                    <p class="text-xl">Professional Tamil Voice-over for commercials, documentaries, and more.</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="border rounded-xl w-10 h-10">
+
+                    </div>
+                    <h4 class="text-2xl font-semibold">Tamil Voice-over</h4>
+                    <p class="text-xl">Professional Tamil Voice-over for commercials, documentaries, and more.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mt-12">
+            <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" class="w-full mb-4 p-2 border border-gray-300 rounded">
+                <input type="email" placeholder="Your Email" class="w-full mb-4 p-2 border border-gray-300 rounded">
+                <textarea placeholder="Your Message" class="w-full mb-4 p-2 border border-gray-300 rounded"></textarea>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 py-4">
+        <p class="text-center text-gray-600">&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

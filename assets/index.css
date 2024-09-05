@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./recoleta-regulardemo.otf') format('opentype');
+}
+
+.recoleta{
+  font-family: 'Recoleta', sans-serif;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
