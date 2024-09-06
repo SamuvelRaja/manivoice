@@ -10,3 +10,8 @@
 body {
   font-family: "Nunito", sans-serif;
 }
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height of the scrollbar (for horizontal scroll) */
+}
+
