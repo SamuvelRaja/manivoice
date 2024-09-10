@@ -23,12 +23,14 @@
     <main class="container mx-auto px-8 py-8 max-w-[1480px]" >
         <section id="hero" class="text-center bg-[#F9F7F6] rounded-[36px] p-4  h-screen" style="background: linear-gradient(180deg,var(--token-c3dd294d-4924-4bd7-80f1-2cfdc6e0e574, #f9f7f6) 0%,rgba(247,244,242,0) 83.55469107627869%);">
             <div class="flex md:flex-row flex-col h-full justify-start md:justify-center items-center gap-8">
-                <div class="rounded-[36px] overflow-hidden h-fit">
-                    <img src="./images/manimaran.webp" alt="manimaran image" width="500" height="500" class="aspect-square max-w-100% object-cover">
+                <div class="rounded-[36px] overflow-hidden h-fit w-full md:w-fit max-w-[500px] grid grid-cols-2">
+                    <img src="./images/eventhosting1.webp" alt="manimaran image"  class=" max-w-100% object-cover ">
+                    <img src="./images/eventhosting2.webp" alt="manimaran image"  class=" max-w-100% object-cover ">
+                    <img src="./images/eventhost4.webp" alt="manimaran image"  class=" max-w-100% object-cover col-span-2">
                 </div>
-                <div>
-                    <h1 class="text-4xl md:text-6xl font-bold mb-4 nunito text-left">Hey There <br> Im Manimaran</h1>
-                    <p class="text-gray-600 mb-8 nunito text-2xl md:text-3xl text-left text-black">Versatile Tamil Voice Talent & <br> Event professional</p>
+                <div class="w-full md:w-1/2">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 nunito text-left">Welcome to GT MANIDHAM </h1>
+                    <p class="text-gray-600 mb-8 nunito text-2xl md:text-3xl text-left text-black">we transform ideas into extraordinary experiences through the art of voice and exceptional event hosting</p>
                     <div class="flex gap-2">
                         <a href="#contact" class="rounded-3xl px-4 md:px-6 py-3 font-bold bg-black text-[16px] md:text-[18px] text-white">
                             Contact now
@@ -41,7 +43,21 @@
             </div>
             
         </section>
-
+        <section id="aboutme" class="mt-[120px]">
+            <h2 class="text-4xl md:text-6xl font-bold text-center mb-[40px] md:mb-[84px]">Who am I</h2>
+            <div class="flex  md:flex-row flex-col h-full justify-center items-center gap-8 max-w-[1280px] mx-auto px-8">
+                <div class="rounded-[36px] overflow-hidden h-fit">
+                    <img src="./images/manimaran.webp" alt="manimaran image" width="500" height="500" class="aspect-square max-w-100% object-cover">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <p class="text-xl :text-2xl">
+                        I am a seasoned Tamil voice-over artist and event professional with a passion for storytelling.
+                        My expertise spans audiobook production, podcasting, dubbing, and voice training, all in Tamil.
+                        Beyond the studio, I also specialize in hosting and anchoring events, ensuring each one is memorable and engaging for Tamil-speaking audiences.
+                    </p>
+                </div>
+            </div>
+        </section>
         <section id="experience" class="md:mt-[100px]">
             <div class="flex flex-wrap justify-around gap-8">
                 <div>
@@ -68,8 +84,8 @@
                         <div class="border border-black rounded-xl w-[80px] h-[80px] p-2">
                             <img src="./images/icons/trainer.svg" alt="">
                         </div>
-                        <h4 class="text-2xl font-semibold text-center md:text-left">Tamil Voice Trainer</h4>
-                        <p class="text-xl text-center md:text-left">Personalized coaching for aspiring Tamil voice artists.</p>
+                        <h4 class="text-2xl font-semibold text-center md:text-left">Tamil Voice Training</h4>
+                        <p class="text-xl text-center md:text-left">Improve your vocal skills with personalized coaching from a dedicated voice trainer. Enhance clarity, confidence, and control in your speaking or singing.</p>
                     </div>
 
                     <div class="flex flex-col items-center md:items-start gap-4 md:max-w-[360px] md:mx-auto ">
@@ -77,7 +93,7 @@
                             <img src="./images/icons/voice.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Tamil Voice-over</h4>
-                        <p class="text-xl text-center md:text-left">Professional Tamil Voice-over for commercials, documentaries, and more.</p>
+                        <p class="text-xl text-center md:text-left">Offering personalized voice-over services with clear and engaging audio for commercials, narrations, and more.</p>
                     </div>
 
                     <div class="flex flex-col items-center md:items-start gap-4 md:max-w-[360px] md:mx-auto">
@@ -85,7 +101,7 @@
                             <img src="./images/icons/audiobook.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Tamil Audiobook Production</h4>
-                        <p class="text-xl text-center md:text-left">Full-service audiobook narration and production in Tamil.</p>
+                        <p class="text-xl text-center md:text-left">Offering expert audiobook production with clear, engaging narration and high-quality audio to bring your story to life.</p>
                     </div>
 
                     <div class="flex flex-col items-center md:items-start gap-4 md:max-w-[360px] md:mx-auto">
@@ -93,35 +109,35 @@
                             <img src="./images/icons/script.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Tamil Script Writing</h4>
-                        <p class="text-xl text-center md:text-left">Crafting engaging scripts in Tamil for various media.</p>
+                        <p class="text-xl text-center md:text-left">Specializing in Tamil script writing to deliver engaging and authentic content tailored to your needs.</p>
                     </div>
                     <div class="flex flex-col items-center md:items-start gap-4 md:max-w-[360px] md:mx-auto">
                         <div class="border border-black rounded-xl w-[80px] h-[80px] p-2">
                             <img src="./images/icons/review.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Tamil Review Writing</h4>
-                        <p class="text-xl text-center md:text-left">Professional review writing in Tamil for books, products, and more.</p>
+                        <p class="text-xl text-center md:text-left">Providing insightful and well-crafted review writing services to deliver clear, engaging evaluations for your products or services.</p>
                     </div>
                     <div class="flex flex-col items-center md:items-start gap-4 md:max-w-[360px] md:mx-auto">
                         <div class="border border-black rounded-xl w-[80px] h-[80px] p-2">
                             <img src="./images/icons/reading.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Tamil Proof Reading</h4>
-                        <p class="text-xl text-center md:text-left">Tamil podcast voice work and editing services.</p>
+                        <p class="text-xl text-center md:text-left">Expert proof reading to make sure your text is clear, accurate, and free of mistakes.</p>
                     </div>
                     <div class="flex flex-col items-center md:items-start gap-4 md:max-w-[360px] md:mx-auto">
                         <div class="border border-black rounded-xl w-[80px] h-[80px] p-2">
                             <img src="./images/icons/podcast.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Tamil Podcasting</h4>
-                        <p class="text-xl text-center md:text-left">Tamil podcast voice work and editing services.</p>
+                        <p class="text-xl text-center md:text-left">Comprehensive podcast services to help you plan, record, and produce engaging and professional audio content.</p>
                     </div>
                     <div class="flex flex-col items-center md:items-start gap-4 md:max-w-[360px] md:mx-auto">
                         <div class="border border-black rounded-xl w-[80px] h-[80px] p-2">
                             <img src="./images/icons/dub.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Tamil Dubbing</h4>
-                        <p class="text-xl text-center md:text-left">High-quality dubbing in Tamil for films, series, and other media.</p>
+                        <p class="text-xl text-center md:text-left">High-quality dubbing services to match your audio perfectly with video, ensuring clear and accurate voiceovers</p>
                     </div>
                     
                 </div>
@@ -132,7 +148,7 @@
                             <img src="./images/icons/eventhost.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Tamil Event Hosting</h4>
-                        <p class="text-xl text-center md:text-left">Expertise in hosting corporate, cultural, and private events in Tamil.</p>
+                        <p class="text-xl text-center md:text-left">Complete event hosting to plan and run your event smoothly, making sure it’s a memorable experience.</p>
                     </div>
 
                     <div class="flex flex-col items-center md:items-start gap-4 md:max-w-[360px] md:mx-auto">
@@ -140,21 +156,21 @@
                             <img src="./images/icons/motivation.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Tamil Motivational Speaking</h4>
-                        <p class="text-xl text-center md:text-left">Inspiring talks in Tamil tailored to your audience's needs.</p>
+                        <p class="text-xl text-center md:text-left">Engaging motivational speeches designed to inspire and energize your audience, leaving a lasting impact.</p>
                     </div>
                     <div class="flex flex-col items-center md:items-start gap-4 md:max-w-[360px] md:mx-auto">
                         <div class="border border-black rounded-xl w-[80px] h-[80px] p-2">
                             <img src="./images/icons/pattimandram.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Tamil Patti mandram</h4>
-                        <p class="text-xl text-center md:text-left">Engaging and dynamic anchoring in Tamil for live events.</p>
+                        <p class="text-xl text-center md:text-left">Engaging debates and discussions that spark thought and keep your audience involved.</p>
                     </div>
                     <div class="flex flex-col items-center md:items-start gap-4 md:max-w-[360px] md:mx-auto">
                         <div class="border border-black rounded-xl w-[80px] h-[80px] p-2">
                             <img src="./images/icons/paatu.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Tamil Paatu mandram</h4>
-                        <p class="text-xl text-center md:text-left">Engaging and dynamic anchoring in Tamil for live events.</p>
+                        <p class="text-xl text-center md:text-left">Organize and host musical discussions, combining entertainment with engaging dialogue.</p>
                     </div>
                     
                     <div class="flex flex-col items-center md:items-start gap-4 md:max-w-[360px] md:mx-auto">
@@ -162,28 +178,28 @@
                             <img src="./images/icons/game.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Game show</h4>
-                        <p class="text-xl text-center md:text-left">Engaging and dynamic anchoring in Tamil for live events.</p>
+                        <p class="text-xl text-center md:text-left">Fun and interactive game shows that entertain and involve your audience.</p>
                     </div>
                     <div class="flex flex-col items-center md:items-start gap-4 md:max-w-[360px] md:mx-auto">
                         <div class="border border-black rounded-xl w-[80px] h-[80px] p-2">
                             <img src="./images/icons/magic.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Magic show </h4>
-                        <p class="text-xl text-center md:text-left">Engaging and dynamic anchoring in Tamil for live events.</p>
+                        <p class="text-xl text-center md:text-left">Enchanting magic shows that amaze and entertain with incredible tricks.</p>
                     </div>
                     <div class="flex flex-col items-center md:items-start gap-4 md:max-w-[360px] md:mx-auto">
                         <div class="border border-black rounded-xl w-[80px] h-[80px] p-2">
                             <img src="./images/icons/dance.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Dance show</h4>
-                        <p class="text-xl text-center md:text-left">Charismatic emcee services in Tamil for a wide range of functions.</p>
+                        <p class="text-xl text-center md:text-left">Exciting dance performances that captivate and entertain with dynamic routines and vibrant energy.</p>
                     </div>
                     <div class="flex flex-col items-center md:items-start gap-4 md:max-w-[360px] md:mx-auto">
                         <div class="border border-black rounded-xl w-[80px] h-[80px] p-2">
                             <img src="./images/icons/yoga.svg" alt="">
                         </div>
                         <h4 class="text-2xl font-semibold text-center md:text-left">Yoga Events</h4>
-                        <p class="text-xl text-center md:text-left">Charismatic emcee services in Tamil for a wide range of functions.</p>
+                        <p class="text-xl text-center md:text-left">Relaxing yoga sessions that help everyone feel refreshed and healthy.</p>
                     </div>
 
                 </div>
