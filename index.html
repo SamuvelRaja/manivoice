@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
         @layer utilities {
         .content-auto {
@@ -24,8 +24,22 @@
     </style>
 </head>
 <body class="bg-[#eae8e1] overflow-x-hidden">
+    <header class="fixed top-0 sm:top-2 w-full z-50 ">
+        <div class="flex w-full sm:w-[400px] mx-auto  justify-between shadow-sm items-center  px-6 py-1 bg-[#f9f7f6] rounded-md ">
+            <div>
+                <img src="./images/GTnobg.svg" width="60px" height="60px"  alt="Logo">
+            </div>
+            <nav>
+                <a class="bg-[#00000014] py-2 px-3 rounded-3xl" href="/index.html">Home</a>  
+                <a class="px-2 py-2 hover:bg-[#cacaca24] rounded-3xl " href="/about.html">About</a> 
+                <a class="px-2 py-2 hover:bg-[#cacaca24] rounded-3xl" href="/#contact" >
+                    Contact
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto mt-[68px] px-4 md:px-8 py-8 max-w-[1480px]" >
 
-    <main class="container mx-auto px-4 md:px-8 py-8 max-w-[1480px]" >
         <section id="hero" class="text-center  rounded-[36px] p-4  h-screen" style="background: linear-gradient(180deg,var(--token-c3dd294d-4924-4bd7-80f1-2cfdc6e0e574, #f9f7f6) 0%,rgba(247,244,242,0) 83.55469107627869%);">
             <div class="flex md:flex-row flex-col h-full justify-start md:justify-center items-center gap-8">
                 <div class="rounded-[36px] overflow-hidden h-fit w-full md:w-fit max-w-[500px] grid grid-cols-2">
