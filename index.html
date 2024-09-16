@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
         @layer utilities {
         .content-auto {
@@ -24,23 +24,23 @@
     </style>
 </head>
 <body class="bg-[#eae8e1] overflow-x-hidden">
-    <header class="fixed top-0 sm:top-2 w-full z-50 ">
-        <div class="flex w-full sm:w-[400px] mx-auto  justify-between shadow-sm items-center  px-6 py-1 bg-[#f9f7f6] rounded-md ">
-            <div>
-                <img src="./images/GTnobg.svg" width="60px" height="60px"  alt="Logo">
+    
+    <main class="container mx-auto  px-4 md:px-8 py-8 max-w-[1480px]" >
+        <header class="sticky mt-0 top-2 w-full max-w-[100%] z-50 ">
+            <div class="flex   mx-auto   justify-between shadow-sm items-center px-3 sm:px-6 py-1 bg-[#f9f7f6] rounded-md ">
+                <div>
+                    <img src="./images/GTnobg.svg" width="60px" height="60px"  alt="Logo">
+                </div>
+                <nav>
+                    <a class="bg-[#00000014] py-2  sm:mx-8 px-2 sm:px-6 rounded-3xl text-xl sm:text-2xl font-light text-gray-600" href="/index.html">Home</a>  
+                    <a class=" sm:mx-8 px-2 py-2 hover:bg-[#cacaca24] rounded-3xl text-xl sm:text-2xl font-light text-gray-600" href="/about.html">About</a> 
+                    <a class=" sm:mx-8 px-2 py-2 hover:bg-[#cacaca24] rounded-3xl text-xl sm:text-2xl font-light text-gray-600" href="/#contact" >
+                        Contact
+                    </a>
+                </nav>
             </div>
-            <nav>
-                <a class="bg-[#00000014] py-2 px-3 rounded-3xl" href="/index.html">Home</a>  
-                <a class="px-2 py-2 hover:bg-[#cacaca24] rounded-3xl " href="/about.html">About</a> 
-                <a class="px-2 py-2 hover:bg-[#cacaca24] rounded-3xl" href="/#contact" >
-                    Contact
-                </a>
-            </nav>
-        </div>
-    </header>
-    <main class="container mx-auto mt-[68px] px-4 md:px-8 py-8 max-w-[1480px]" >
-
-        <section id="hero" class="text-center  rounded-[36px] p-4  h-screen" style="background: linear-gradient(180deg,var(--token-c3dd294d-4924-4bd7-80f1-2cfdc6e0e574, #f9f7f6) 0%,rgba(247,244,242,0) 83.55469107627869%);">
+        </header>
+        <section id="hero" class="text-center  mt-8 rounded-[36px] p-4  h-screen" style="background: linear-gradient(180deg,var(--token-c3dd294d-4924-4bd7-80f1-2cfdc6e0e574, #f9f7f6) 0%,rgba(247,244,242,0) 83.55469107627869%);">
             <div class="flex md:flex-row flex-col h-full justify-start md:justify-center items-center gap-8">
                 <div class="rounded-[36px] overflow-hidden h-fit w-full md:w-fit max-w-[500px] grid grid-cols-2">
                     <img src="./images/eventhosting1.webp" alt="manimaran image"  class=" max-w-100% object-cover ">
@@ -87,7 +87,7 @@
         </section>
         
             <section id="aboutme" class="mt-[88px] md:mt-[120px] ">
-                <div class="max-w-[1280px] rounded-3xl bg-[#e5dbeb] py-[48px] mx-auto">
+                <div class="max-w-[1280px] rounded-3xl bg-[#e5dbeb] py-[48px] mx-auto ">
                     <h2 class="text-4xl md:text-6xl font-bold text-center mb-[40px] md:mb-[84px]">Who am I</h2>
                     <div class="flex  md:flex-row flex-col h-full justify-center items-center gap-8   px-8">
                         
@@ -128,8 +128,8 @@
         
 
         <section id="service" class="mt-[88px] md:mt-[124px]">
-            <div class="px-4 md:px-8 max-w-[1280px] mx-auto bg-[#d2e8c8] rounded-3xl  py-[48px]  ">
                 <h2 class="text-4xl md:text-6xl font-bold text-center mb-[48px] ">Services I offer</h2>
+            <div class="px-4 md:px-8 max-w-[1280px] mx-auto bg-[#d2e8c8] rounded-3xl  py-[48px]  ">
                 <h3 class="text-3xl md:text-[40px] font-semibold mb-[64px] text-center ">Voice & Audio Services (in Tamil)</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3  gap-x-8 gap-y-[40px] md:gap-y-[80px]">
                     <div class="flex flex-col items-center md:items-start gap-6 md:max-w-[360px] md:mx-auto">
