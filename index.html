@@ -110,7 +110,7 @@
                             <p>
                                 I founded GT MANIDHAM from the love for the craft of communication and entertainment that I inherently have. With over 15 years of experience in the industry, our journey began with a commitment to delivering high-quality voice and event solutions.
                             </p>
-                            <p class=" mt-4"> <a href="/about.html" target="_blank" class=" underline text-black">Read more</a> </p>
+                            <p class=" mt-4"> <a href="/about.html" target="_blank" class=" underline text-black">More about me</a> </p>
                             
                         </div>
                     </div>
@@ -417,35 +417,6 @@
             <a target="_blank" href="/terms.html">Terms</a>
         </p>
     </footer>
-    <script>
-        const scrollContainer = document.querySelector('.scroll-container');
-
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-
-        scrollContainer.addEventListener('mousedown', (e) => {
-            isDown = true;
-            scrollContainer.classList.add('scrolling');
-            startX = e.pageX - scrollContainer.offsetLeft;
-            scrollLeft = scrollContainer.scrollLeft;
-        });
-
-        scrollContainer.addEventListener('mouseleave', () => {
-            isDown = false;
-        });
-
-        scrollContainer.addEventListener('mouseup', () => {
-            isDown = false;
-        });
-
-        scrollContainer.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - scrollContainer.offsetLeft;
-            const walk = (x - startX) * 2; // Adjust scroll speed by multiplying
-            scrollContainer.scrollLeft = scrollLeft - walk;
-        });
-    </script>
+    
 </body>
 </html>
