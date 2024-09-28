@@ -391,6 +391,7 @@
         <section id="contact" class="mt-[88px] md:mt-[164px]">
             <div class="max-w-[1280px] mx-auto flex flex-col gap-4 bg-[#c1deaf] rounded-3xl md:rounded-[230px] py-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-[24px]">Let's work together</h2>
+                <div class="ml-embedded" data-form="pE72k1"></div>
                 <p class="text-center text-2xl w-fit mx-auto max-w-[694px]">
                     For any inquiries regarding Tamil voice-over, audiobook, podcast, 
                     and event services, please contact me
@@ -422,35 +423,14 @@
             <a target="_blank" href="/terms.html">Terms</a>
         </p>
     </footer>
-    <script>
-        const scrollContainer = document.querySelector('.scroll-container');
-
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-
-        scrollContainer.addEventListener('mousedown', (e) => {
-            isDown = true;
-            scrollContainer.classList.add('scrolling');
-            startX = e.pageX - scrollContainer.offsetLeft;
-            scrollLeft = scrollContainer.scrollLeft;
-        });
-
-        scrollContainer.addEventListener('mouseleave', () => {
-            isDown = false;
-        });
-
-        scrollContainer.addEventListener('mouseup', () => {
-            isDown = false;
-        });
-
-        scrollContainer.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - scrollContainer.offsetLeft;
-            const walk = (x - startX) * 2; // Adjust scroll speed by multiplying
-            scrollContainer.scrollLeft = scrollLeft - walk;
-        });
-    </script>
+    <!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '1121019');
+</script>
+<!-- End MailerLite Universal -->
 </body>
 </html>
