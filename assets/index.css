@@ -8,6 +8,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
     
 }
+.footblur{
+      -webkit-filter: blur(80px);
+    filter: blur(80px);
+    flex: none;
+    inset: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+}
 ::-webkit-scrollbar {
   width: 12px; /* Width of the scrollbar */
   height: 12px; /* Height of the scrollbar (for horizontal scroll) */
