@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Broadcasting Training Programs - GT Audio Events</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/about.css">
     <style>
+        /* Styles remain the same as the original */
         body {
             font-family: "Inter", sans-serif;
             -webkit-font-smoothing: antialiased;
@@ -84,7 +86,7 @@
             padding: 60px 24px;
             background-color: #e5dbeb;
             border-radius: 36px;
-            margin-top: 80px;
+            margin: 80px 0px;
         }
 
         h1 {
@@ -130,6 +132,32 @@
         .btn:hover {
             background-color: #252525;
         }
+        .card.flex{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+        
+        .card>div{
+            width: 45%;
+            }
+
+        .cardimg img{
+            border-radius: 20px;
+            max-width: 100%;
+            aspect-ratio: 3/2;
+        }
+        @media (max-width: 768px) {
+            .card.accent{
+                flex-direction: column-reverse;
+            }
+            .card>div{
+                width: 100%;
+            }
+            .card.flex{
+                gap: 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -141,103 +169,114 @@
     </div>
 
     <main class="container">
+        <header class="sticky mt-0 top-2 w-full max-w-[100%] z-50 ">
+            <div class="flex   mx-auto   justify-between shadow-sm items-center px-3 sm:px-6 py-1 bg-[#f9f7f6] rounded-md ">
+                <div>
+                    <img src="./images/GTnobg.svg" width="60px" height="60px"  alt="Logo">
+                </div>
+                <nav>
+                    <a class="bg-[#00000014] py-2  sm:mx-8 px-2 sm:px-6 rounded-3xl text-xl sm:text-2xl font-light text-gray-600" href="/index.html">Home</a>  
+                    <a class=" sm:mx-8 px-2 py-2 hover:bg-[#cacaca24] rounded-3xl text-xl sm:text-2xl font-light text-gray-600" href="/about.html">About</a> 
+                    <a class=" sm:mx-8 px-2 py-2 hover:bg-[#cacaca24] rounded-3xl text-xl sm:text-2xl font-light text-gray-600" href="/#contact" >
+                        Contact
+                    </a>
+                </nav>
+            </div>
+        </header>
         <section class="section">
-            <div class="card highlight">
-                <h2 class="poppins">Radio Jockey Training</h2>
-                <div class="grid">
-                    <div>
-                        <h3>Key Voice Techniques</h3>
-                        <ul class="skill-list">
-                            <li>Pronunciation techniques for clarity and soft voice delivery</li>
-                            <li>Advanced tone and pitch control</li>
-                            <li>Professional breathing techniques</li>
-                            <li>Mastery of voice variations: normal, big, loud, vibrant, and micro voices</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Essential RJ Skills</h3>
-                        <ul class="skill-list">
-                            <li>Building fluency and audience engagement</li>
-                            <li>Developing language confidence</li>
-                            <li>Performance recording techniques</li>
-                            <li>Staying current with trends and events</li>
-                        </ul>
-                    </div>
+            <div class="card flex highlight">
+                <div class="cardimg">
+                    <img src="./images/icons/onair.webp" width="450"  />
+                </div>
+                <div>
+                    <h2 class="poppins">Radio Jockey Training</h2>
+                    <p>Ready to shine on the radio? Our training program offers hands-on experience in performance recording techniques and staying ahead of industry trends. Learn from industry experts and develop your own unique style to become a successful radio jockey.</p>
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <div class="card accent">
-                <h2 class="poppins">News Anchor & Journalist Training</h2>
-                <div class="grid">
-                    <div>
-                        <h3>Core Competencies</h3>
-                        <ul class="skill-list">
-                            <li>Media ethics and professional reporting</li>
-                            <li>Public speaking and presentation</li>
-                            <li>Script writing and report creation</li>
-                            <li>Research and fact-checking methodology</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Professional Development</h3>
-                        <ul class="skill-list">
-                            <li>Mock anchoring in realistic scenarios</li>
-                            <li>Developing a unique presentation style</li>
-                            <li>Enhanced on-camera presence</li>
-                            <li>Practical experience through live sessions</li>
-                        </ul>
-                    </div>
+            <div class="card flex accent">
+                <div >
+                    <h2 class="poppins">News Anchor & Journalist Training</h2>
+                    <p>Ready to step into the spotlight? Our training program offers a unique blend of theoretical knowledge and practical experience. Learn from industry experts, practice in realistic scenarios, and develop your own unique style to become a confident news anchor or journalist.</p>
+                </div>
+                <div class="cardimg">
+                    <img src="./images/icons/anchor.webp"  width="450" />
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <div class="card">
-                <h2 class="poppins">Career Growth & Success</h2>
-                <div class="grid">
-                    <div>
-                        <h3>Continuous Learning</h3>
-                        <p>Our program emphasizes ongoing skill refinement and professional development through:</p>
-                        <ul class="skill-list">
-                            <li>Regular feedback and improvement sessions</li>
-                            <li>Industry exposure and networking</li>
-                            <li>Portfolio building opportunities</li>
-                            <li>Career guidance and placement support</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Success Path</h3>
-                        <p>We help you build:</p>
-                        <ul class="skill-list">
-                            <li>Strong professional confidence</li>
-                            <li>Unique personal brand</li>
-                            <li>Industry-ready skills</li>
-                            <li>Professional network</li>
-                        </ul>
-                    </div>
+            <div class="card flex">
+                <div class="cardimg">
+                    <img src="./images/icons/career.webp"  width="450" />
+                </div>
+                <div>
+                    <h2 class="poppins">Elevate Your Career</h2>
+                    <p>Our program is designed to accelerate your career to new heights. We prioritize continuous learning through regular feedback sessions, industry exposure, and portfolio building opportunities. Our expert guidance and placement support will help you build strong professional confidence, cultivate a unique personal brand, and develop industry-ready skills.</p>
                 </div>
             </div>
         </section>
 
-        <section class="contact-section">
+        <section class="contact-section pb-20">
             <h2 class="poppins">Start Your Broadcasting Journey</h2>
             <p>Contact GT Audio Events for enrollment and queries</p>
             <div class="grid" style="max-width: 800px; margin: 40px auto;">
                 <div>
                     <h3>Get in Touch</h3>
                     <p>Call us for more information<br>
-                    [Your Contact Number]</p>
+                    <a href="tel:9894758008" >9894758008</a></p>
                 </div>
                 <div>
                     <h3>Online Enquiry</h3>
-                    <p>Email: [Your Email]<br>
-                    Website: [Your Website]</p>
+                    <p>Contact us through Email: <br> <a href="mailto:manimaran2905@gmail.com" >
+                        manimaran2905@gmail.com
+                    </a></p>
                 </div>
             </div>
-            <a href="#" class="btn">Enroll Now</a>
         </section>
     </main>
+    <footer class=" relative mt-80">
+        <div class="bg-[#c1deaf] footblur "></div>
+        <div class=" w-fit mx-auto pt-12 pb-20 flex flex-col sm:flex-row items-center sm:items-start  text-base sm:text-xl bg-transparent relative">
+            <div class="mx-4 md:ml-20">
+                <a href="https://g.page/r/CVraqddL7dQCEBM/review" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/frame.png" width="250px" alt="Qr code">
+                </a>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8 mx-4 mt-8 md:mt-4 md:mx-20 ">
+                <div class="flex flex-col gap-4">
+                    <a href="/index.html">Home</a>  
+                    <a href="/about.html">About Us</a> 
+                    <a target="_blank" href="/privacy.html">Privacy</a>  
+                    <a target="_blank" href="/terms.html">Terms</a>
+                </div>
+                <div >
+                    <div class="w-fit mx-auto  px-4 flex flex-col  gap-4">
+                        <a href="https://www.instagram.com/mani.maran2905?utm_source=qr&igsh=YmlrdXE0NXd3dzlq" target="_blank" class="inline-flex items-center gap-1">
+                            <img src="./images/icons/insta.svg" width="20px" height="20px" class="min-w-[20px] h-[20px]" alt=" fiverr icon">Instagram
+                        </a>
+                        <a href="https://www.facebook.com/manimaran2905?mibextid=ZbWKwL" target="_blank" class="inline-flex items-center gap-1">
+                            <img src="./images/icons/fb.svg" width="20px" height="20px" class="min-w-[20px] h-[20px]" alt=" fiverr icon">Facebook
+                        </a>
+                        <a href="https://www.linkedin.com/in/manimaran-s-a94a29298" target="_blank" class="inline-flex items-center gap-1">
+                            <img src="./images/icons/linkedin.svg" width="24px" height="20px"  alt=" fiverr icon">Linkedin
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <p>Business Partner</p>
+                    <a href="https://www.soundnation.studio/" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/soundnation.webp" width="200px" alt="" class="mt-4 shadow-sm bg-black">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="text-center  text-gray-600 mb-0 relative">
+            &copy; 2024 GT Manidham. All rights reserved. 
+            
+        </p>
+    </footer>
 </body>
 </html>
