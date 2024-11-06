@@ -476,5 +476,59 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTDMM5K8"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Get all audio elements
+    const audioElements = document.querySelectorAll('audio');
+    let currentlyPlaying = null;
+    let currentIndex = 0;
+
+    // Function to play next audio
+    const playNext = () => {
+        currentIndex = (currentIndex + 1) % audioElements.length;
+        audioElements[currentIndex].play();
+    };
+
+    // Add event listeners to each audio element
+    audioElements.forEach((audio, index) => {
+        // When play is clicked
+        audio.addEventListener('play', () => {
+            // If there's another audio playing
+            if (currentlyPlaying && currentlyPlaying !== audio) {
+                currentlyPlaying.pause();
+                currentlyPlaying.currentTime = 0;
+            }
+            currentlyPlaying = audio;
+            currentIndex = index;
+        });
+
+        // When audio ends
+        audio.addEventListener('ended', () => {
+            currentlyPlaying = null;
+            playNext();
+        });
+
+        // Add error handling
+        audio.addEventListener('error', (e) => {
+            console.error('Error playing audio:', e);
+            currentlyPlaying = null;
+            // Try to play next if current audio fails
+            playNext();
+        });
+    });
+
+    // Add keyboard controls (optional)
+    document.addEventListener('keydown', (e) => {
+        if (e.code === 'Space' && currentlyPlaying) {
+            e.preventDefault();
+            if (currentlyPlaying.paused) {
+                currentlyPlaying.play();
+            } else {
+                currentlyPlaying.pause();
+            }
+        }
+    });
+});
+    </script>
 </body>
 </html>
