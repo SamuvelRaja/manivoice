@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f9f7f6',
+                        secondary: '#eae8e1',
+                        textPrimary: '#000000',
+                        textSecondary: '#252525',
+                        accent1: '#c1deaf',
+                        accent2: '#d2e8c8',
+                        accent3: '#dce4ea',
+                        accent4: '#fae3cf',
+                        accent5: '#e5dbeb',
+                        accent6: '#e6b27e',
+                        accent7: '#f3d1b1'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+         .footblur{
+            -webkit-filter: blur(80px);
+            filter: blur(80px);
+            flex: none;
+            inset: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="bg-primary text-textPrimary">
+    <div id="root">
+        <section id="navbar_hero" class="relative">
+            <!-- Navigation -->
+            <header class="sticky mt-0 top-2 w-full max-w-[100%] z-50 ">
+                <div class="flex   mx-auto   justify-between shadow-sm items-center px-3 sm:px-6 py-1 bg-[#f9f7f6] rounded-md ">
+                    <div>
+                        <img src="./images/GTnobg.svg" width="60px" height="60px"  alt="Logo">
+                    </div>
+                    <nav>
+                        <a class="bg-[#00000014] py-2  sm:mx-8 px-2 sm:px-6 rounded-3xl text-sm sm:text-xl md:text-2xl sm:font-light text-gray-600" href="/index.html">Home</a>  
+                        <a class=" sm:mx-8 px-2 py-2 hover:bg-[#cacaca24] rounded-3xl text-sm sm:text-xl md:text-2xl sm:font-light text-gray-600" href="/about.html">About</a> 
+                        <a class=" sm:mx-8 px-2 py-2 hover:bg-[#cacaca24] rounded-3xl text-sm sm:text-xl md:text-2xl sm:font-light text-gray-600" href="/training.html">Training</a>
+                        <a class=" sm:mx-8 px-2 py-2 hover:bg-[#cacaca24] rounded-3xl text-sm sm:text-xl md:text-2xl sm:font-light text-gray-600" href="/training.html">Blogs</a>
+                    </nav>
+                </div>
+            </header>
+
+            <!-- Hero Section -->
+            <div class="bg-secondary py-24">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h1 class="text-4xl font-bold text-textPrimary sm:text-5xl md:text-6xl">
+                            Stories & Insights
+                        </h1>
+                        <p class="mt-4 text-xl text-textSecondary">
+                            Personal experiences, voice training tips, and professional insights
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+<section id="personal_blogs" class="py-16 bg-primary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-textPrimary">Personal Blog Posts</h2>
+            <div class="h-1 w-20 bg-accent6 mt-2"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Blog Card 1 -->
+            <article class="bg-white rounded-lg overflow-hidden shadow-sm transition-transform duration-300 hover:-translate-y-1">
+                <div class="aspect-w-16 aspect-h-9 bg-accent3"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="text-sm text-gray-600">March 15, 2024</span>
+                        <span class="mx-2 text-gray-600">•</span>
+                        <span class="bg-accent2 text-textSecondary text-sm px-3 py-1 rounded-full">Personal</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-textPrimary mb-2">
+                        அன்பு - மீன் குழம்பு சோறு
+                    </h3>
+                    <p class="text-textSecondary mb-4">
+                        ஒரு பெரிய இடைவெளிக்குப் பிறகு கடந்த...
+                    </p>
+                    <a href="#" class="inline-flex items-center text-accent6 hover:text-accent7 transition-colors">
+                        மேலும் படிக்க
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog Card 2 -->
+            <article class="bg-white rounded-lg overflow-hidden shadow-sm transition-transform duration-300 hover:-translate-y-1">
+                <div class="aspect-w-16 aspect-h-9 bg-accent3"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="text-sm text-gray-600">March 10, 2024</span>
+                        <span class="mx-2 text-gray-600">•</span>
+                        <span class="bg-accent2 text-textSecondary text-sm px-3 py-1 rounded-full">Personal</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-textPrimary mb-2">
+                        கரகாட்டக்காரர்கள்
+                    </h3>
+                    <p class="text-textSecondary mb-4">
+                        தமிழகத்தின் மிகப் பழமையான கலை கரகாட்டம்....
+                    </p>
+                    <a href="#" class="inline-flex items-center text-accent6 hover:text-accent7 transition-colors">
+                        மேலும் படிக்க
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="voice_training" class="py-16 bg-primary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-textPrimary">Voice Training Resources</h2>
+            <div class="h-1 w-20 bg-accent5 mt-2"></div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- <article class="bg-white rounded-lg overflow-hidden shadow-sm transition-transform duration-300 hover:-translate-y-1">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-accent5/20 text-textSecondary text-sm px-3 py-1 rounded-full">Beginner</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-textPrimary mb-2">
+                        Voice Basics 101
+                    </h3>
+                    <p class="text-textSecondary mb-4">
+                        Essential techniques for beginners starting their voice training journey...
+                    </p>
+                    <a href="#" class="inline-flex items-center text-accent6 hover:text-accent7 transition-colors">
+                        Start Learning 
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            
+            <article class="bg-white rounded-lg overflow-hidden shadow-sm transition-transform duration-300 hover:-translate-y-1">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-accent5/20 text-textSecondary text-sm px-3 py-1 rounded-full">Intermediate</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-textPrimary mb-2">
+                        Pitch Control
+                    </h3>
+                    <p class="text-textSecondary mb-4">
+                        Master the art of controlling your pitch with advanced exercises...
+                    </p>
+                    <a href="#" class="inline-flex items-center text-accent6 hover:text-accent7 transition-colors">
+                        Start Learning 
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            
+            <article class="bg-white rounded-lg overflow-hidden shadow-sm transition-transform duration-300 hover:-translate-y-1">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-accent5/20 text-textSecondary text-sm px-3 py-1 rounded-full">Advanced</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-textPrimary mb-2">
+                        Resonance Training
+                    </h3>
+                    <p class="text-textSecondary mb-4">
+                        Advanced techniques for mastering vocal resonance and tone...
+                    </p>
+                    <a href="#" class="inline-flex items-center text-accent6 hover:text-accent7 transition-colors">
+                        Start Learning 
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </article> -->
+            <article></article>
+            <article class="bg-white rounded-lg overflow-hidden shadow-sm transition-transform duration-300 hover:-translate-y-1 mx-auto">
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-semibold text-textPrimary mb-2">
+                        Coming Soon
+                    </h3>
+                    <p class="text-textSecondary mb-4">
+                        Stay tuned for more voice training resources and updates.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        
+    </div>
+</section>
+
+<section id="blog_categories" class="py-16 bg-secondary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 text-center">
+            <h2 class="text-3xl font-bold text-textPrimary">Explore Categories</h2>
+            <div class="h-1 w-20 bg-accent7 mx-auto mt-2"></div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Personal Stories Category -->
+            <div class="group bg-primary rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-semibold text-textPrimary">Personal Stories</h3>
+                    <span class="text-accent6">2 Posts</span>
+                </div>
+                <p class="text-textSecondary mb-4">Professional journey and personal growth experiences</p>
+                <a href="#" class="inline-flex items-center text-accent6 group-hover:text-accent7 transition-colors">
+                    View Posts 
+                    <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Voice Training Category -->
+            <div class="group bg-primary rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-semibold text-textPrimary">Voice Training</h3>
+                    <span class="text-accent6">coming soon</span>
+                </div>
+                <p class="text-textSecondary mb-4">Comprehensive guides and techniques for voice development</p>
+                <a href="#" class="inline-flex items-center text-accent6 group-hover:text-accent7 transition-colors">
+                    View Posts 
+                    <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Resources Category -->
+            <div class="group bg-primary rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-semibold text-textPrimary">Resources</h3>
+                    <span class="text-accent6">Coming Soon</span>
+                </div>
+                <p class="text-textSecondary mb-4">Helpful tools and resources for continuous learning</p>
+                <a href="#" class="inline-flex items-center text-accent6 group-hover:text-accent7 transition-colors">
+                    View Posts 
+                    <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Updates Category -->
+            <div class="group bg-primary rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-semibold text-textPrimary">Updates</h3>
+                    <span class="text-accent6">Coming Soon</span>
+                </div>
+                <p class="text-textSecondary mb-4">Latest news and updates about our journey</p>
+                <a href="#" class="inline-flex items-center text-accent6 group-hover:text-accent7 transition-colors">
+                    View Posts 
+                    <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="newsletter_signup" class="py-24 bg-secondary relative overflow-hidden">
+    <div class="absolute inset-0">
+        <div class="absolute top-0 -right-40 w-80 h-80 bg-accent4 rounded-full opacity-20 blur-3xl"></div>
+        <div class="absolute bottom-0 -left-40 w-80 h-80 bg-accent5 rounded-full opacity-20 blur-3xl"></div>
+    </div>
+
+    
+</section>
+<footer class=" relative">
+        <div class="bg-[#c1deaf] footblur "></div>
+        <div class=" w-fit mx-auto pt-12 pb-20 flex flex-col sm:flex-row items-center sm:items-start  text-base sm:text-xl bg-transparent relative">
+            <div class="mx-4 md:ml-20">
+                <a href="https://g.page/r/CVraqddL7dQCEBM/review" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/frame.png" width="250px" alt="Qr code">
+                </a>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8 mx-4 mt-8 md:mt-4 md:mx-20 ">
+                <div class="flex flex-col gap-4">
+                    <a href="/index.html">Home</a>  
+                    <a href="/about.html">About Us</a> 
+                    <a target="_blank" href="/privacy.html">Privacy</a>  
+                    <a target="_blank" href="/terms.html">Terms</a>
+                </div>
+                <div >
+                    <div class="w-fit mx-auto  px-4 flex flex-col  gap-4">
+                        <a href="https://www.instagram.com/mani.maran2905?utm_source=qr&igsh=YmlrdXE0NXd3dzlq" target="_blank" class="inline-flex items-center gap-1">
+                            <img src="./images/icons/insta.svg" width="20px" height="20px" class="min-w-[20px] h-[20px]" alt=" fiverr icon">Instagram
+                        </a>
+                        <a href="https://www.facebook.com/manimaran2905?mibextid=ZbWKwL" target="_blank" class="inline-flex items-center gap-1">
+                            <img src="./images/icons/fb.svg" width="20px" height="20px" class="min-w-[20px] h-[20px]" alt=" fiverr icon">Facebook
+                        </a>
+                        <a href="https://www.linkedin.com/in/manimaran-s-a94a29298" target="_blank" class="inline-flex items-center gap-1">
+                            <img src="./images/icons/linkedin.svg" width="24px" height="20px"  alt=" fiverr icon">Linkedin
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <p>Business Partner</p>
+                    <a href="https://www.soundnation.studio/" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/soundnation.webp" width="200px" alt="" class="mt-4 shadow-sm bg-black">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="text-center  text-gray-600 mb-0 relative">
+            &copy; 2024 GT Manidham. All rights reserved. 
+            
+        </p>
+    </footer>
+                    </body>
+                    </html>
+                
