@@ -148,6 +148,29 @@
             max-width: 100%;
             aspect-ratio: 3/2;
         }
+        .section {
+  margin: 40px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1000px; /* ✅ keeps images centered and limited */
+}
+
+.photos img {
+  flex: 1 1 400px;  /* ✅ min 400px, but shrink if needed */
+  max-width: 48%;   /* ✅ ensures 2 images fit side by side */
+  border-radius: 12px;
+  object-fit: cover;
+}
         @media (max-width: 768px) {
             .card.accent{
                 flex-direction: column-reverse;
@@ -245,6 +268,100 @@
                 </div>
             </div>
         </section>
+
+        <section class="section">
+            <div class="card highlight text-center">
+                <!-- Title in the middle -->
+                <h2 class="poppins">One Day Workshop</h2>
+
+                <!-- Photos below the title -->
+                <div class="photos">
+                    <img src="images/one-day-workshop/1.jpg"/>
+                    <img src="images/one-day-workshop/2.jpg"/>
+                </div>
+
+                <br>
+
+                <h2 class="poppins">One Day Training Program</h2>
+
+                <!-- Photos below the title -->
+                <div class="photos">
+                    <img src="images\One-day-Training-Program\1.jpg"/>
+                    <img src="images\One-day-Training-Program\2.jpg"/>
+                    <img src="images\One-day-Training-Program\3.jpg"/>
+                    <img src="images\One-day-Training-Program\4.jpg"/>
+                </div>
+
+                <br>
+
+                <h2 class="poppins">Training Session - 1st Batch</h2>
+
+                <!-- Photos below the title -->
+                <div class="photos">
+                    <img src="images\1st Batch\1.jpg"/>
+                    <img src="images\1st Batch\2.jpg"/>
+                    <img src="images\1st Batch\3.jpg"/>
+                    <img src="images\1st Batch\4.jpg"/>
+                </div>
+                
+                <br>
+
+                <h2 class="poppins">Training Session - 2nd Batch</h2>
+
+                <!-- Photos below the title -->
+                <div class="photos">
+                    <img src="images\2nd Batch\1.jpg"/>
+                    <img src="images\2nd Batch\2.jpg"/>
+                    <img src="images\2nd Batch\3.jpg"/>
+                    <img src="images\2nd Batch\4.jpg"/>
+                    <img src="images\2nd Batch\5.jpg"/>
+                    <img src="images\2nd Batch\6.jpg"/>
+                    <img src="images\2nd Batch\7.jpg"/>
+                    <img src="images\2nd Batch\8.jpg"/>
+                    <img src="images\2nd Batch\9.jpg"/>
+                    <img src="images\2nd Batch\10.jpg"/>
+                </div>
+
+                <br>
+
+                <h2 class="poppins">Training Session - 3rd Batch</h2>
+
+                <!-- Photos below the title -->
+                <div class="photos">
+                    <img src="images\3rd Batch\1.jpg"/>
+                    <img src="images\3rd Batch\2.jpg"/>
+                    <img src="images\3rd Batch\3.jpg"/>
+                </div>
+
+                <br>
+
+                <h2 class="poppins">Training Session - 4th Batch</h2>
+
+                <!-- Photos below the title -->
+                <div class="photos">
+                    <img src="images\4th Batch\1.jpg"/>
+                    <img src="images\4th Batch\2.jpg"/>
+                    <img src="images\4th Batch\3.jpg"/>
+                    <img src="images\4th Batch\4.jpg"/>
+                    <img src="images\4th Batch\5.jpg"/>
+                    <img src="images\4th Batch\6.jpg"/>
+                </div>
+
+                <br>
+
+                <h2 class="poppins">Training Session - 5th Batch</h2>
+
+                <!-- Photos below the title -->
+                <div class="photos">
+                    <img src="images\5th Batch\1.jpg"/>
+                    <img src="images\5th Batch\2.jpg"/>
+                    <img src="images\5th Batch\3.jpg"/>
+                    <img src="images\5th Batch\4.jpg"/>
+                    <img src="images\5th Batch\5.jpg"/>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer class=" relative mt-80">
         <div class="bg-[#c1deaf] footblur "></div>
