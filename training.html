@@ -162,12 +162,12 @@
   gap: 20px;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 1000px; /* ✅ keeps images centered and limited */
+  max-width: 1400px; /* ✅ keeps images centered and limited */
 }
 
 .photos img {
-  flex: 1 1 400px;  /* ✅ min 400px, but shrink if needed */
-  max-width: 48%;   /* ✅ ensures 2 images fit side by side */
+  /*flex: 1 1 400px;*/  /* ✅ min 400px, but shrink if needed */
+  max-width: 600px;   /* ✅ ensures 2 images fit side by side */
   border-radius: 12px;
   object-fit: cover;
 }
@@ -188,6 +188,16 @@
             .card{
                 padding:16px;
                 }
+            .photos {
+                flex-direction: column; /* stack vertically */
+                align-items: center;    /* keep them centered */
+            }
+
+            .photos img {
+                max-width: 100%;   /* take full width of screen */
+                width: 100%;       /* scale responsively */
+                height: auto;      /* maintain aspect ratio */
+            }
         }
     </style>
 </head>
@@ -393,72 +403,73 @@
                 <h2 class="poppins">KSR College x GT Manidham: 5-Day Media Masterclass Journey</h2>
                 
                 <div class="photos">
-                    <img src="images/KSR/KSR.jpg"/>
-                    <img src="images/KSR/Day5/12.JPG"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759511571/KSR_eoiind.webp"/>
                 </div>
                 
                 <br>
 
                 <h3 class="poppins">Day 1</h3>
                 <div class="photos">
-                    <img src="images/KSR/Day1/1.JPG"/>
-                    <img src="images/KSR/Day1/2.JPG"/>
-                    <img src="images/KSR/Day1/3.JPG"/>
-                    <img src="images/KSR/Day1/4.JPG"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759507658/1_cosx14.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759507658/2_iwzngm.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759507661/3_jtcocm.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759507660/4_xnl6ul.webp"/>
                 </div>
 
                 <br>
 
                 <h3 class="poppins">Day 2</h3>
                 <div class="photos">
-                    <img src="images\KSR\Day2\1.JPG"/>
-                    <img src="images\KSR\Day2\2.JPG"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508015/1_jdt21x.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508015/2_z0a3kz.webp"/>
                 </div>
 
                 <br>
 
                 <h3 class="poppins">Day 3</h3>
                 <div class="photos">
-                    <img src="images\KSR\Day3\1.JPG"/>
-                    <img src="images\KSR\Day3\2.JPG"/>
-                    <img src="images\KSR\Day3\3.JPG"/>
-                    <img src="images\KSR\Day3\4.JPG"/>
-                    <img src="images\KSR\Day3\5.JPG"/>
-                    <img src="images\KSR\Day3\6.JPG"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508157/1_iiefzw.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508158/2_brtd9l.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508158/3_yawkpa.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508158/4_ezkobz.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508159/5_cn8cav.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508159/6_prdpx7.webp"/>
                 </div>
 
                 <br>
 
                 <h3 class="poppins">Day 4</h3>
                 <div class="photos">
-                    <img src="images\KSR\Day4\1.JPG"/>
-                    <img src="images\KSR\Day4\2.JPG"/>
-                    <img src="images\KSR\Day4\3.JPG"/>
-                    <img src="images\KSR\Day4\4.JPG"/>
-                    <img src="images\KSR\Day4\5.JPG"/>
-                    <img src="images\KSR\Day4\6.JPG"/>
-                    <img src="images\KSR\Day4\7.JPG"/>
-                    <img src="images\KSR\Day4\8.JPG"/>
-                    <img src="images\KSR\Day4\9.JPG"/>
-                    <img src="images\KSR\Day4\10.JPG"/>
-                    <img src="images\KSR\Day4\11.JPG"/>
-                    <img src="images\KSR\Day4\12.JPG"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508778/1_jokwkq.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508779/2_kjltsm.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508781/3_nfblak.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508780/4_ycxvly.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508780/5_dcmdag.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508780/6_tdb1pb.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508780/7_v8ujjc.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508781/8_eusdqy.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508782/9_g5rmpd.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508782/10_rypcky.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508786/11_lvgm11.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759508787/12_ikuqx8.webp"/>
                 </div>
                 
                 <br>
 
                 <h3 class="poppins">Day 5</h3>
                 <div class="photos">
-                    <img src="images\KSR\Day5\1.JPG"/>
-                    <img src="images\KSR\Day5\2.JPG"/>
-                    <img src="images\KSR\Day5\3.JPG"/>
-                    <img src="images\KSR\Day5\4.JPG"/>
-                    <img src="images\KSR\Day5\6.JPG"/>
-                    <img src="images\KSR\Day5\7.JPG"/>
-                    <img src="images\KSR\Day5\8.JPG"/>
-                    <img src="images\KSR\Day5\9.JPG"/>
-                    <img src="images\KSR\Day5\10.JPG"/>
-                    <img src="images\KSR\Day5\11.JPG"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759510219/1_kkjfkw.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759510217/2_xpgwbj.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759510217/3_td4cmb.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759510220/4_yypwmy.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759510218/5_lobpy1.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759510219/6_ihqlre.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759510219/7_c3ed9x.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759510226/8_wgisrj.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759510227/9_lcar2y.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759510228/10_yhf7hq.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759510227/11_gtycra.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759510229/12_aasn6q.webp"/>
                 </div>           
             </div>            
         </section>
@@ -468,7 +479,13 @@
                 <h2 class="poppins">Our Students in the Spotlight</h2>
                 <h3 class="poppins">Batch 1: Malathy</h3>
                 <div class="photos">
-                    <img src="images\Star\1.jpg"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759511502/1_ig7oi0.webp"/>
+                </div>
+
+                <h3 class="poppins">Batch 2: Dinesh</h3>
+                <div class="photos">
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759511502/2_quqymt.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759511503/3_jzmlwz.webp"/>
                 </div>
             </div>
         </section>    
