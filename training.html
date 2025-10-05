@@ -156,21 +156,30 @@
   text-align: center;
 }
 
+
 .photos {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 1400px; /* ✅ keeps images centered and limited */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .photos img {
-  /*flex: 1 1 400px;*/  /* ✅ min 400px, but shrink if needed */
-  max-width: 600px;   /* ✅ ensures 2 images fit side by side */
-  border-radius: 12px;
-  object-fit: cover;
+    width: calc(50% - 10px); /* 2 images per row with gap */
+    border-radius: 12px;
+    object-fit: cover;
 }
+
+.custom-video {
+    width: 280px;
+    height: 500px;        /* fixed height */
+    object-fit: fit;    /* crop video to cover */
+    display: block;       /* remove inline spacing issues */
+    border-radius: 16px;
+}
+
         @media (max-width: 768px) {
             .card.accent{
                 flex-direction: column-reverse;
@@ -188,16 +197,21 @@
             .card{
                 padding:16px;
                 }
-            .photos {
-                flex-direction: column; /* stack vertically */
-                align-items: center;    /* keep them centered */
-            }
+             .photos {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .photos img {
+        flex: 0 0 100%; /* 1 image per row */
+        width: 100%;
+        height: auto;   /* maintain aspect ratio */
+    }
 
-            .photos img {
-                max-width: 100%;   /* take full width of screen */
-                width: 100%;       /* scale responsively */
-                height: auto;      /* maintain aspect ratio */
-            }
+    .custom-video {
+        width: 90%;      /* take full width of container */
+        height: auto;     /* maintain aspect ratio */
+        max-height: 400px; /* optional max height */
+    }
         }
     </style>
 </head>
@@ -286,10 +300,10 @@
                 <h2 class="poppins">One Day Training Program</h2>
                 <!-- Photos below the title -->
                 <div class="photos">
-                    <img src="images\One-day-Training-Program\1.jpg"/>
-                    <img src="images\One-day-Training-Program\2.jpg"/>
-                    <img src="images\One-day-Training-Program\3.jpg"/>
-                    <img src="images\One-day-Training-Program\4.jpg"/>
+                    <img src="images/One-day-Training-Program/1.jpg"/>
+                    <img src="images/One-day-Training-Program/2.jpg"/>
+                    <img src="images/One-day-Training-Program/3.jpg"/>
+                    <img src="images/One-day-Training-Program/4.jpg"/>
                     <img src="images/one-day-workshop/2.jpg"/>
                 </div>
 
@@ -299,10 +313,10 @@
 
                 <!-- Photos below the title -->
                 <div class="photos">
-                    <img src="images\1st Batch\1.jpg"/>
-                    <img src="images\1st Batch\2.jpg"/>
-                    <img src="images\1st Batch\3.jpg"/>
-                    <img src="images\1st Batch\4.jpg"/>
+                    <img src="images/1st Batch/1.jpg"/>
+                    <img src="images/1st Batch/2.jpg"/>
+                    <img src="images/1st Batch/3.jpg"/>
+                    <img src="images/1st Batch/4.jpg"/>
                 </div>
                 
                 <br>
@@ -311,16 +325,16 @@
 
                 <!-- Photos below the title -->
                 <div class="photos">
-                    <img src="images\2nd Batch\1.jpg"/>
-                    <img src="images\2nd Batch\2.jpg"/>
-                    <img src="images\2nd Batch\3.jpg"/>
-                    <img src="images\2nd Batch\4.jpg"/>
-                    <img src="images\2nd Batch\5.jpg"/>
-                    <img src="images\2nd Batch\6.jpg"/>
-                    <img src="images\2nd Batch\7.jpg"/>
-                    <img src="images\2nd Batch\8.jpg"/>
-                    <img src="images\2nd Batch\9.jpg"/>
-                    <img src="images\2nd Batch\10.jpg"/>
+                    <img src="images/2nd Batch/1.jpg"/>
+                    <img src="images/2nd Batch/2.jpg"/>
+                    <img src="images/2nd Batch/3.jpg"/>
+                    <img src="images/2nd Batch/4.jpg"/>
+                    <img src="images/2nd Batch/5.jpg"/>
+                    <img src="images/2nd Batch/6.jpg"/>
+                    <img src="images/2nd Batch/7.jpg"/>
+                    <img src="images/2nd Batch/8.jpg"/>
+                    <img src="images/2nd Batch/9.jpg"/>
+                    <img src="images/2nd Batch/10.jpg"/>
                 </div>
 
                 <br>
@@ -329,9 +343,9 @@
 
                 <!-- Photos below the title -->
                 <div class="photos">
-                    <img src="images\3rd Batch\1.jpg"/>
-                    <img src="images\3rd Batch\2.jpg"/>
-                    <img src="images\3rd Batch\3.jpg"/>
+                    <img src="images/3rd Batch/1.jpg"/>
+                    <img src="images/3rd Batch/2.jpg"/>
+                    <img src="images/3rd Batch/3.jpg"/>
                 </div>
 
                 <br>
@@ -340,12 +354,12 @@
 
                 <!-- Photos below the title -->
                 <div class="photos">
-                    <img src="images\4th Batch\1.jpg"/>
-                    <img src="images\4th Batch\2.jpg"/>
-                    <img src="images\4th Batch\3.jpg"/>
-                    <img src="images\4th Batch\4.jpg"/>
-                    <img src="images\4th Batch\5.jpg"/>
-                    <img src="images\4th Batch\6.jpg"/>
+                    <img src="images/4th Batch/1.jpg"/>
+                    <img src="images/4th Batch/2.jpg"/>
+                    <img src="images/4th Batch/3.jpg"/>
+                    <img src="images/4th Batch/4.jpg"/>
+                    <img src="images/4th Batch/5.jpg"/>
+                    <img src="images/4th Batch/6.jpg"/>
                 </div>
 
                 <br>
@@ -354,11 +368,11 @@
 
                 <!-- Photos below the title -->
                 <div class="photos">
-                    <img src="images\5th Batch\1.jpg"/>
-                    <img src="images\5th Batch\2.jpg"/>
-                    <img src="images\5th Batch\3.jpg"/>
-                    <img src="images\5th Batch\4.jpg"/>
-                    <img src="images\5th Batch\5.jpg"/>
+                    <img src="images/5th Batch/1.jpg"/>
+                    <img src="images/5th Batch/2.jpg"/>
+                    <img src="images/5th Batch/3.jpg"/>
+                    <img src="images/5th Batch/4.jpg"/>
+                    <img src="images/5th Batch/5.jpg"/>
                 </div>
 
                 <br>
@@ -367,11 +381,11 @@
 
                 <!-- Photos below the title -->
                 <div class="photos">
-                    <img src="images\6th Batch\1.jpg"/>
-                    <img src="images\6th Batch\2.jpg"/>
-                    <img src="images\6th Batch\3.jpg"/>
-                    <img src="images\6th Batch\4.jpg"/>
-                    <img src="images\6th Batch\5.jpg"/>
+                    <img src="images/6th Batch/1.jpg"/>
+                    <img src="images/6th Batch/2.jpg"/>
+                    <img src="images/6th Batch/3.jpg"/>
+                    <img src="images/6th Batch/4.jpg"/>
+                    <img src="images/6th Batch/5.jpg"/>
                 </div>
 
                 <br>
@@ -380,11 +394,11 @@
 
                 <!-- Photos below the title -->
                 <div class="photos">
-                    <img src="images\7th Batch\1.jpg"/>
-                    <img src="images\7th Batch\2.jpg"/>
-                    <img src="images\7th Batch\3.jpg"/>
-                    <img src="images\7th Batch\4.jpg"/>
-                    <img src="images\7th Batch\5.jpg"/>
+                    <img src="images/7th Batch/1.jpg"/>
+                    <img src="images/7th Batch/2.jpg"/>
+                    <img src="images/7th Batch/3.jpg"/>
+                    <img src="images/7th Batch/4.jpg"/>
+                    <img src="images/7th Batch/5.jpg"/>
                 </div>
             </div>
         </section>
@@ -394,7 +408,11 @@
                 <h2 class="poppins">KSR College x GT Manidham: 5-Day Media Masterclass Journey</h2>
                 
                 <div class="photos">
-                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759511571/KSR_eoiind.webp"/>
+                <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759511571/KSR_eoiind.webp"/>
+                <video class="rounded-2xl custom-video" playsinline controls 
+                    poster="https://res.cloudinary.com/dek8xhzlw/video/upload/so_97/v1759653374/KSR_1_crelga.jpg">
+                <source src="https://res.cloudinary.com/dek8xhzlw/video/upload/v1759653374/KSR_1_crelga.mp4" type="video/mp4">
+                </video>
                 </div>
                 
                 <br>
