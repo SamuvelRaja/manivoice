@@ -65,6 +65,14 @@
             .grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            #videoBox {
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
+  #videoBox video {
+    width: 45% !important;
+  }
         }
 
         .skill-list {
@@ -400,6 +408,18 @@
                     <img src="images/7th Batch/4.jpg"/>
                     <img src="images/7th Batch/5.jpg"/>
                 </div>
+
+                <br>
+
+                <h2 class="poppins">Training Session - 8th Batch</h2>
+
+                <!-- Photos below the title -->
+                <div class="photos">
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1763263973/1_kbexg0.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1763263971/2_hrub0s.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1763263966/3_yivmnu.webp"/>
+                    <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1763263966/4_lr2rxm.webp"/>
+                </div>
             </div>
         </section>
 
@@ -409,10 +429,19 @@
                 
                 <div class="photos">
                 <img src="https://res.cloudinary.com/dek8xhzlw/image/upload/v1759511571/KSR_eoiind.webp"/>
-                <video class="rounded-2xl custom-video" playsinline controls 
-                    poster="https://res.cloudinary.com/dek8xhzlw/video/upload/so_97/v1759653374/KSR_1_crelga.jpg">
-                <source src="https://res.cloudinary.com/dek8xhzlw/video/upload/v1759653374/KSR_1_crelga.mp4" type="video/mp4">
-                </video>
+                <div id="videoBox" style="display:flex; flex-direction:column; align-items:center; gap:20px;">
+<video style="width:90%; border-radius:16px; aspect-ratio:9/16; object-fit:cover;" playsinline controls
+  poster="https://res.cloudinary.com/dek8xhzlw/video/upload/so_97/v1759653374/KSR_1_crelga.jpg">
+  <source src="https://res.cloudinary.com/dek8xhzlw/video/upload/v1759653374/KSR_1_crelga.mp4" type="video/mp4">
+</video>
+
+<video style="width:90%; border-radius:16px; aspect-ratio:9/16; object-fit:cover;" playsinline controls
+  poster="https://res.cloudinary.com/dek8xhzlw/video/upload/so_10/v1763266167/MANIMARAN_SIR_WORKSHOP_kkbrr3.jpg">
+  <source src="https://res.cloudinary.com/dek8xhzlw/video/upload/v1763266167/MANIMARAN_SIR_WORKSHOP_kkbrr3.mp4" type="video/mp4">
+</video>
+
+
+</div>
                 </div>
                 
                 <br>
