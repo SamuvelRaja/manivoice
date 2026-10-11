@@ -1,0 +1,24 @@
+VS CODE (Mani Website folder)
+
+* Make the necessary changes
+  git add .
+* git commit -m "message yezhuthu"
+* git push origin main
+
+
+
+GitHub 
+
+* Download zip file
+* Zip file ulla iruka folder ah upload pannum cloudflare
+
+
+
+Cloudflare 
+Appa oda google account la login pannum
+https://dash.cloudflare.com/240775d758fcb1d55d5940d708957370/pages/view/manimaaran/deployments/new
+
+
+
+
+
